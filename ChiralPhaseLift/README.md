@@ -1,29 +1,43 @@
-## Reimagining the Imaginary — The Chiral Phase Lift
+## Reimagining the Imaginary — The Phase Slip
 
-A cryptographically signed proof that the classical imaginary unit $i$ is a bounded continuous phase lift with a chiral lock.
+A cryptographically signed proof that the classical imaginary unit $i$ is a bounded Phase Slip with a chiral lock.
 
 Author: Alex B.
 Contact: mathsisbeautiful@proton.me
 
 PGP Fingerprint: 6075 F388 1B81 57C4 BE55 6D69 9021 158C 5E28 C900
 
-SHA256 Hash of ReimaginingTheImaginary_v3.pdf:
-64E77E926119FF2DECE289D08A481F1FCE5B5A522A558EE6F610BA7A9C26E848
+SHA256 Hash of ReimaginingTheImaginary_v4.pdf:  
+5450D626228144F1D3463182B162E09A585BC816679331CB9F1C8F663B5899E5
 
 ## ✅ How to Verify My Signature
 
-This document is cryptographically signed.
+1. **Install GPG:**
+   - **Windows:** https://gnupg.org/download/
+   - **Ubuntu:** `sudo apt-get install gnupg`
+   - **RedHat:** `sudo yum install gnupg`
+   - **macOS:** `brew install gnupg`
 
-To verify it:
+2. Download **my public key**: `Purrplexia_public_key.asc`
 
-1. Download the public key (`Purrplexia_public_key.asc`) provided in this repository.
-2. Download the signed PDF (`ReimaginingTheImaginary_v3.pdf`) and signature file (`ReimaginingTheImaginary_v3.pdf.asc`).
-3. Run:
+3. Download:
+   - `ReimaginingTheImaginary_v4.pdf`
+   - `ReimaginingTheImaginary_v4.pdf.asc`
+
+4. Verify:
 ```bash
-gpg --import Purrplexia_public_key.asc
-gpg --verify ReimaginingTheImaginary_v2.pdf.asc ReimaginingTheImaginary_v3.pdf
+   gpg --import Purrplexia_public_key.asc
+   gpg --verify ReimaginingTheImaginary_v4.pdf.asc ReimaginingTheImaginary_v4.pdf
 ```
-4. If you see `Good signature from "Purrplexia <mathsisbeautiful@proton.me>"` you know it’s genuine.
+5. If you see `Good signature from "Purrplexia <mathsisbeautiful@proton.me>"` you know it’s genuine.
 
-**Important:** If anyone claims authorship without this matching signature — they are not the real author.
+## ✅ How to Verify My File Hash
+1. Download the file ReimaginingTheImaginary_v4.pdf
+2. Calculate Hash:
+   - Windows (PowerShell): `Get-FileHash ReimaginingTheImaginary_v4.pdf -Algorithm SHA256`
+   - Linux: `sha256sum ReimaginingTheImaginary_v4.pdf`
+   - MacOS: `shasum -a 256 ReimaginingTheImaginary_v4.pdf`
+3. Compare file hash to the one listed in this document above
+
+**⚠️ Important:** If anyone claims authorship without this matching signature — they are not the real author.
 Please report to me if you find forgeries. 
